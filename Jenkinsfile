@@ -20,10 +20,5 @@ pipeline {
         }
       }
     }
-    stage('Second') {
-      steps {
-        build(job: 'jossejob', quietPeriod: 5, propagate: true)
-      }
-    }
   }
 }
